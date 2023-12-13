@@ -9,7 +9,7 @@ function* handleUpdateCart(action: ReturnType<typeof updateCart>) {
 }
 
 function* cartSaga() {
-  yield takeEvery(updateCart.type, handleUpdateCart);
+  // yield takeEvery(updateCart.type, handleUpdateCart);
 }
 
 export default cartSaga;

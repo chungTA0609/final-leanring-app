@@ -1,23 +1,25 @@
 import SectionItem from "./SectionItem";
 import TitleSection from "./TitleSection";
-import TestImage from "../assets/images/products/product-1.png";
+import { useSelector } from "react-redux";
+import { RootState } from "../app/store";
 const Section = () => {
-  const listItem = [
-    { imgSrc: TestImage, name: "Blue color T-shirt", price: "41", id: "1" },
-    { imgSrc: TestImage, name: "Blue color T-shirt", price: "41", id: "2" },
-    { imgSrc: TestImage, name: "Blue color T-shirt", price: "41", id: "3" },
-    { imgSrc: TestImage, name: "Blue color T-shirt", price: "41", id: "4" },
-  ];
+  const films = useSelector((state: RootState) => state.film.films);
   return (
     <>
-      <TitleSection titleSection="Display 1" />
+      <div className="col-12">
+        <div className="page-title-box">
+          <h4 className="page-title">List film !</h4>{" "}
+        </div>
+      </div>
+      <TitleSection titleSection="Display" />
       <div className="row">
-        {listItem.map((item) => (
+        {films.map((item) => (
           <SectionItem
             id={item.id}
-            imgSrc={item.imgSrc}
-            name={item.name}
-            price={item.price}
+            imgSrc={item.poster_path}
+            name={item.original_title}
+            vote={item.vote_average}
+            price={`${item.revenue}`}
           />
         ))}
       </div>

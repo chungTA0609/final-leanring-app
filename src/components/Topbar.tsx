@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
 import LogoImage from "../assets/images/logo-light.png";
 import Icon from "@mdi/react";
-import { mdiMenu } from "@mdi/js";
+import { mdiCartArrowRight, mdiLogin, mdiMagnify, mdiMenu } from "@mdi/js";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../app/store";
+import { setShowMenu } from "../app/feature/menu/menuSlice";
+import { CartProduct } from "../models/CartProduct";
 const Topbar = () => {
-  const initFullScreen = () => {};
+  const { showMenu } = useSelector((state: RootState) => state.menu);
+  const { cartProduct } = useSelector((state: RootState) => state.cart);
+  const dispatch = useDispatch();
   const horizonalmenu = () => {};
-  const toggleMenu = () => {};
-  const toggleRightSidebar = () => {};
+  const toggleMenu = () => {
+    document.body.setAttribute(
+      "data-sidebar-size",
+      showMenu ? "condensed" : ""
+    );
+
+    dispatch(setShowMenu(!showMenu));
+  };
+
   return (
     <>
       <div className="navbar-custom">
@@ -19,12 +32,16 @@ const Topbar = () => {
                     <input
                       type="search"
                       className="form-control"
-                      placeholder="$t('navbar.search.text')"
+                      placeholder="Search..."
                       id="top-search"
                     />
                     <div className="input-group-append">
                       <button className="btn" type="submit">
-                        <i className="fe-search"></i>
+                        <Link to={"product"}>
+                          <i className="fe-search">
+                            <Icon path={mdiMagnify} size={0.75} />
+                          </i>
+                        </Link>
                       </button>
                     </div>
                   </div>
@@ -33,16 +50,46 @@ const Topbar = () => {
             </li>
 
             <li className="dropdown d-inline-block d-lg-none">
-              <a
+              <Link
+                to={"product"}
                 className="nav-link dropdown-toggle arrow-none waves-effect waves-light"
-                data-toggle="dropdown"
-                href="#"
                 role="button"
                 aria-haspopup="false"
                 aria-expanded="false"
               >
                 <i className="fe-search noti-icon"></i>
-              </a>
+                <Icon path={mdiMagnify} size={1} />
+              </Link>
+              <div className="dropdown-menu dropdown-lg dropdown-menu-right p-0">
+                <form className="p-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="navbar.search.text"
+                    aria-label="Recipient's username"
+                  />
+                </form>
+              </div>
+            </li>
+            <li className="dropdown d-inline-block d-lg-none">
+              <Link
+                to={"cart"}
+                className="nav-link dropdown-toggle arrow-none waves-effect waves-light"
+                role="button"
+                aria-haspopup="false"
+                aria-expanded="false"
+              >
+                <i className="fe-search noti-icon"></i>
+                <Icon path={mdiCartArrowRight} size={1} />
+                <span className="badge badge-danger rounded-circle noti-icon-badge">
+                  {cartProduct.reduce(
+                    (accumulator, currentItem: CartProduct) => {
+                      return accumulator + currentItem.quantity;
+                    },
+                    0
+                  )}
+                </span>
+              </Link>
               <div className="dropdown-menu dropdown-lg dropdown-menu-right p-0">
                 <form className="p-3">
                   <input
@@ -56,23 +103,29 @@ const Topbar = () => {
             </li>
 
             <li className="dropdown d-none d-lg-inline-block">
-              <a
+              <Link
+                to={"cart"}
                 className="nav-link dropdown-toggle arrow-none waves-effect waves-light"
-                onClick={initFullScreen}
-                data-toggle="fullscreen"
-                href="#"
               >
-                <i className="fe-maximize noti-icon"></i>
-              </a>
+                <Icon path={mdiCartArrowRight} size={1} />
+                <span className="badge badge-danger rounded-circle noti-icon-badge">
+                  {cartProduct.reduce(
+                    (accumulator, currentItem: CartProduct) => {
+                      return accumulator + currentItem.quantity;
+                    },
+                    0
+                  )}
+                </span>
+              </Link>
             </li>
 
             <li className="dropdown notification-list">
-              <a
-                onClick={toggleRightSidebar}
+              <Link
+                to={"login"}
                 className="nav-link right-bar-toggle toggle-right"
               >
-                <i className="fe-settings noti-icon toggle-right"></i>
-              </a>
+                <Icon path={mdiLogin} size={1} />
+              </Link>
             </li>
           </ul>
 

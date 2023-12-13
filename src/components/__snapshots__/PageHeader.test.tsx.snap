@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-12"
+  >
+    <div
+      className="page-title-box"
+    >
+      <h4
+        className="page-title"
+      >
+         title
+      </h4>
+      <div
+        className="page-title-right"
+      />
+    </div>
+  </div>
+</div>
+`;

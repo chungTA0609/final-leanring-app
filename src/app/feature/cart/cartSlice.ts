@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { CartProduct } from "../../../models/CartProduct";
 interface CartState {
   open: boolean;
-  cartProduct: Array<object>;
+  cartProduct: Array<CartProduct>;
   subtotal: number;
   totalItem: number;
 }

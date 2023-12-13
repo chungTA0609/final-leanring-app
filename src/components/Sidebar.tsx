@@ -71,11 +71,6 @@ const Sidebar = () => {
           <ul className="list-unstyled" id="side-menu">
             <li className="menu-title">kk</li>
             <li>
-              <a className="has-arrow">
-                <Icon path={mdiViewDashboard} size={1} />
-                <span>kk</span>
-              </a>
-
               <Link to="product" className="side-nav-link-ref">
                 <Icon path={mdiViewDashboard} size={1} />
                 <span>List Film</span>

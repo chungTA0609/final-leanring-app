@@ -1,0 +1,790 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="form-wizard md"
+      >
+        <div
+          class="wizard-navigation"
+        >
+          <div
+            class="wizard-tab-content"
+          >
+            <div
+              aria-hidden="true"
+              aria-labelledby="step-BillingInfo0"
+              class="wizard-tab-container"
+              id="BillingInfo0"
+              role="tabpanel"
+            >
+              <div>
+                <h4
+                  class="header-title"
+                >
+                  Billing Information
+                </h4>
+                 
+                <p
+                  class="sub-header"
+                >
+                  Fill the form below in order to send you the order's invoice.
+                </p>
+                <form>
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-md-6"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          First Name
+                        </label>
+                        <input
+                          class="form-control"
+                          id="billing-first-name"
+                          placeholder="Enter your first name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Last Name
+                        </label>
+                        <input
+                          class="form-control"
+                          id="billing-last-name"
+                          placeholder="Enter your last name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-md-6"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Email Address
+                          <span
+                            class="text-danger"
+                          >
+                            *
+                          </span>
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-email-address"
+                          name="email"
+                          placeholder="Enter your email"
+                          type="email"
+                        />
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="col-md-6"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Phone 
+                          <span
+                            class="text-danger"
+                          >
+                            *
+                          </span>
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-phone"
+                          name="phone"
+                          placeholder="(xx) xxx xxxx xxx"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-12"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Address
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-address"
+                          placeholder="Enter full address"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-md-4"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Town / City
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-town-city"
+                          placeholder="Enter your city name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="col-md-4"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          State
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-state"
+                          placeholder="Enter your state"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="col-md-4"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Zip Code
+                        </label>
+                         
+                        <input
+                          class="form-control"
+                          id="billing-zip-postal"
+                          placeholder="Enter your zip code"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-12"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <label>
+                          Country
+                        </label>
+                         
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-12"
+                    >
+                      <div
+                        class="form-group"
+                      >
+                        <div
+                          class="custom-control custom-checkbox"
+                        >
+                          <input
+                            class="custom-control-input"
+                            id="customCheck2"
+                            type="checkbox"
+                          />
+                           
+                          <label
+                            class="custom-control-label"
+                          >
+                            Ship to different address ?
+                          </label>
+                        </div>
+                      </div>
+                       
+                      <div
+                        class="form-group mt-3"
+                      >
+                        <label>
+                          Order Notes:
+                        </label>
+                         
+                        <textarea
+                          class="form-control"
+                          id="example-textarea"
+                          placeholder="Write some note.."
+                          rows="3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <ul
+                    class="pager wizard list-inline mt-2"
+                  >
+                    <li
+                      class="list-inline-item"
+                    >
+                      <a
+                        class="btn btn-secondary"
+                        href="/ecommerce/cart"
+                      >
+                        <svg
+                          role="presentation"
+                          style="width: 1.5rem; height: 1.5rem;"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+                            style="fill: currentColor;"
+                          />
+                        </svg>
+                         Back to Shopping Cart
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="next list-inline-item float-right"
+                    >
+                      <button
+                        class="btn btn-success float-right"
+                        type="submit"
+                      >
+                        <svg
+                          role="presentation"
+                          style="width: 1.5rem; height: 1.5rem;"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M3,13.5L2.25,12H7.5L6.9,10.5H2L1.25,9H9.05L8.45,7.5H1.11L0.25,6H4A2,2 0 0,1 6,4H18V8H21L24,12V17H22A3,3 0 0,1 19,20A3,3 0 0,1 16,17H12A3,3 0 0,1 9,20A3,3 0 0,1 6,17H4V13.5H3M19,18.5A1.5,1.5 0 0,0 20.5,17A1.5,1.5 0 0,0 19,15.5A1.5,1.5 0 0,0 17.5,17A1.5,1.5 0 0,0 19,18.5M20.5,9.5H18V12H22.46L20.5,9.5M9,18.5A1.5,1.5 0 0,0 10.5,17A1.5,1.5 0 0,0 9,15.5A1.5,1.5 0 0,0 7.5,17A1.5,1.5 0 0,0 9,18.5Z"
+                            style="fill: currentColor;"
+                          />
+                        </svg>
+                         Proceed to Shipping
+                      </button>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+               
+            </div>
+             
+          </div>
+        </div>
+         
+        <div
+          class="wizard-card-footer clearfix"
+        >
+          <div
+            class="wizard-footer-left"
+            style="display: none;"
+          >
+            <span
+              role="button"
+            >
+              <button
+                class="wizard-btn"
+                type="button"
+              >
+                Back
+              </button>
+            </span>
+             
+          </div>
+           
+          <div
+            class="wizard-footer-right"
+          >
+             
+            <span
+              role="button"
+            >
+              <button
+                class="wizard-btn"
+                style="display: none;"
+                type="submit"
+              >
+                Next
+              </button>
+              <button
+                class="wizard-btn"
+                style="display: none;"
+                type="submit"
+              >
+                Finish
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="form-wizard md"
+    >
+      <div
+        class="wizard-navigation"
+      >
+        <div
+          class="wizard-tab-content"
+        >
+          <div
+            aria-hidden="true"
+            aria-labelledby="step-BillingInfo0"
+            class="wizard-tab-container"
+            id="BillingInfo0"
+            role="tabpanel"
+          >
+            <div>
+              <h4
+                class="header-title"
+              >
+                Billing Information
+              </h4>
+               
+              <p
+                class="sub-header"
+              >
+                Fill the form below in order to send you the order's invoice.
+              </p>
+              <form>
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        First Name
+                      </label>
+                      <input
+                        class="form-control"
+                        id="billing-first-name"
+                        placeholder="Enter your first name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Last Name
+                      </label>
+                      <input
+                        class="form-control"
+                        id="billing-last-name"
+                        placeholder="Enter your last name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Email Address
+                        <span
+                          class="text-danger"
+                        >
+                          *
+                        </span>
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-email-address"
+                        name="email"
+                        placeholder="Enter your email"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Phone 
+                        <span
+                          class="text-danger"
+                        >
+                          *
+                        </span>
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-phone"
+                        name="phone"
+                        placeholder="(xx) xxx xxxx xxx"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-12"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Address
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-address"
+                        placeholder="Enter full address"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-md-4"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Town / City
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-town-city"
+                        placeholder="Enter your city name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="col-md-4"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        State
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-state"
+                        placeholder="Enter your state"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="col-md-4"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Zip Code
+                      </label>
+                       
+                      <input
+                        class="form-control"
+                        id="billing-zip-postal"
+                        placeholder="Enter your zip code"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-12"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <label>
+                        Country
+                      </label>
+                       
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-12"
+                  >
+                    <div
+                      class="form-group"
+                    >
+                      <div
+                        class="custom-control custom-checkbox"
+                      >
+                        <input
+                          class="custom-control-input"
+                          id="customCheck2"
+                          type="checkbox"
+                        />
+                         
+                        <label
+                          class="custom-control-label"
+                        >
+                          Ship to different address ?
+                        </label>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="form-group mt-3"
+                    >
+                      <label>
+                        Order Notes:
+                      </label>
+                       
+                      <textarea
+                        class="form-control"
+                        id="example-textarea"
+                        placeholder="Write some note.."
+                        rows="3"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <ul
+                  class="pager wizard list-inline mt-2"
+                >
+                  <li
+                    class="list-inline-item"
+                  >
+                    <a
+                      class="btn btn-secondary"
+                      href="/ecommerce/cart"
+                    >
+                      <svg
+                        role="presentation"
+                        style="width: 1.5rem; height: 1.5rem;"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+                          style="fill: currentColor;"
+                        />
+                      </svg>
+                       Back to Shopping Cart
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="next list-inline-item float-right"
+                  >
+                    <button
+                      class="btn btn-success float-right"
+                      type="submit"
+                    >
+                      <svg
+                        role="presentation"
+                        style="width: 1.5rem; height: 1.5rem;"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3,13.5L2.25,12H7.5L6.9,10.5H2L1.25,9H9.05L8.45,7.5H1.11L0.25,6H4A2,2 0 0,1 6,4H18V8H21L24,12V17H22A3,3 0 0,1 19,20A3,3 0 0,1 16,17H12A3,3 0 0,1 9,20A3,3 0 0,1 6,17H4V13.5H3M19,18.5A1.5,1.5 0 0,0 20.5,17A1.5,1.5 0 0,0 19,15.5A1.5,1.5 0 0,0 17.5,17A1.5,1.5 0 0,0 19,18.5M20.5,9.5H18V12H22.46L20.5,9.5M9,18.5A1.5,1.5 0 0,0 10.5,17A1.5,1.5 0 0,0 9,15.5A1.5,1.5 0 0,0 7.5,17A1.5,1.5 0 0,0 9,18.5Z"
+                          style="fill: currentColor;"
+                        />
+                      </svg>
+                       Proceed to Shipping
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+             
+          </div>
+           
+        </div>
+      </div>
+       
+      <div
+        class="wizard-card-footer clearfix"
+      >
+        <div
+          class="wizard-footer-left"
+          style="display: none;"
+        >
+          <span
+            role="button"
+          >
+            <button
+              class="wizard-btn"
+              type="button"
+            >
+              Back
+            </button>
+          </span>
+           
+        </div>
+         
+        <div
+          class="wizard-footer-right"
+        >
+           
+          <span
+            role="button"
+          >
+            <button
+              class="wizard-btn"
+              style="display: none;"
+              type="submit"
+            >
+              Next
+            </button>
+            <button
+              class="wizard-btn"
+              style="display: none;"
+              type="submit"
+            >
+              Finish
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -6,22 +6,26 @@ import { Provider } from "react-redux";
 import store from "./app/store.ts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import IndividualIntervalsExample from "./components/Carousel.tsx";
-import Detail from "./components/Deatail.tsx";
+import Detail from "./components/Detail.tsx";
 import LoginForm from "./components/LoginForm.tsx";
 import ForgotPassword from "./components/ForgotPassword.tsx";
 import Register from "./components/Register.tsx";
+import Cart from "./components/Cart.tsx";
+import Checkout from "./components/Checkout.tsx";
+import Homepage from "./components/Hompage.tsx";
 ReactDOM.createRoot(document.getElementById("wrapper")!).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
+          <Route index element={<Homepage />} />
           <Route path="/" element={<App />}>
-            <Route index element={<App />} />
             <Route
               path="product"
               element={<IndividualIntervalsExample />}
             ></Route>
-            {/* <Route path="country-filter" element={<CountryFilter />}></Route> */}
+            <Route path="cart" element={<Cart />}></Route>
+            <Route path="checkout" element={<Checkout />}></Route>
             <Route path="product/:productId" element={<Detail />} />
             {/* <Route path="/new-product" element={<NewProduct />}></Route> */}
           </Route>

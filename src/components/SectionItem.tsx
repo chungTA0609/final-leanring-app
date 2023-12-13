@@ -1,15 +1,20 @@
+import { mdiInformation } from "@mdi/js";
+import Icon from "@mdi/react";
 import { Link } from "react-router-dom";
+import RatingComponent from "./RatingComponent";
 
 const SectionItem = ({
   imgSrc,
   name,
   price,
   id,
+  vote,
 }: {
   imgSrc: string;
   name: string;
   price: string;
-  id: string;
+  id: number;
+  vote: number;
 }) => {
   return (
     <>
@@ -21,26 +26,24 @@ const SectionItem = ({
             </div>{" "}
             <div className="product-action">
               <div className="d-flex">
-                <a href="#" className="btn btn-white btn-block action-btn m-2">
-                  <i className="ri-edit-2-fill align-middle"></i> Detail
-                </a>{" "}
+                <Link
+                  to={`${id}`}
+                  className="btn btn-white btn-block action-btn m-2"
+                >
+                  <Icon path={mdiInformation} size={1} />
+                  Detail
+                </Link>{" "}
               </div>
             </div>
           </div>{" "}
           <div className="product-info border-top p-3">
             <div>
               <h5 className="font-16 mt-0 mb-1">
-                <Link to={id} className="text-dark">
+                <Link to={`${id}`} className="text-dark">
                   {name}
                 </Link>
               </h5>{" "}
-              <p className="text-muted">
-                <i className="mdi mdi-star text-warning"></i>{" "}
-                <i className="mdi mdi-star text-warning"></i>{" "}
-                <i className="mdi mdi-star text-warning"></i>{" "}
-                <i className="mdi mdi-star text-warning"></i>{" "}
-                <i className="mdi mdi-star text-warning"></i>
-              </p>{" "}
+              <RatingComponent rating={vote / 2} />{" "}
               <h4 className="m-0">
                 <span className="text-muted"> Price : $ {price}</span>
               </h4>
