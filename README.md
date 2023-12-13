@@ -41,8 +41,8 @@ Run the app
 npm run dev
 ```
 Demo
-You can view the live site here ~ http://localhost:5173/
+You can view the live site here
 ```bash
-npm run dev
+http://localhost:5173/
 ```
 
